@@ -1,109 +1,48 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dashboard</title>
 </head>
 <body>
-    <main class="h-screen flex">
-      <section class="w-2/12 bg-slate-950 opacity-90 h-full p-4 flex flex-col text-white gap-5">
-        <h1 class="w-full text-center flex items-center justify-center font-bold">
-          <i class='bx bxs-bar-chart-alt-2 mr-1 text-xl'></i>CONCEPT</h1>
-        <div class="flex flex-col gap-3">
-          <span class="text-xs uppercase opacity-80">Menu</span>
-          <ul class="text-sm w-full">
-            <details>
-                <summary><i class="bx bxs-dashboard text-xl bg-slate-700">Dashboard</i></summary>
-                    <button><li class="opacity-60 px-1">eCommerce</li></button>
-                    <button><li class="opacity-60 px-1">Finance</li></button>
-                    <button><li class="opacity-60 px-1">Sales</li></button>
-                    <button><li class="opacity-60 px-1">infulencer</li></button>
-            </details>
-          </ul>
-        </div>
-      </section>
-      <section class="w-10/12 bg-slate-300 h-full">
-        <nav class="flex items-center justify-start relative bg-white w-full h-20">
-          <div class="flex items-center justify-start   w-2/4 h-8">
-            <i class='absolute left-10 text-2xl text-slate-400  bx bx-search'></i>
-            <input class="absolute  left-20 bg-white text-slate-900 placeholder:p-2  font-bold opacity-70 w-2/4 h-10" type="search" placeholder="Type to search...">
-          </div>
-          <div class="absolute flex items-center justify-start p-1  left-2/3 bg-slate-200 rounded-full w-16 h-8">
-            <div class="w-6 h-6 flex items-center justify-center rounded-full bg-white">
-              <i class='absolute text-lg text-slate-500 bx bx-sun'></i>
-            </div>
-          </div>
-          <div class="absolute flex items-center justify-center gap-2 left-3/4 w-25 h-12">
-            <div class="flex items-center justify-center w-8 h-8 bg-slate-200 rounded-full">
-              <i class='text-xl text-slate-500 bx bx-bell'></i>
-            </div>
-            <div class="flex items-center justify-center w-8 h-8 bg-slate-200 rounded-full">
-              <i class='text-lg text-slate-500 bx bx-message-rounded-dots'></i>
-            </div>
-          </div>
-          <div class="relative left-96 w-24 h-12 flex flex-col">
-            <h1 class="absolute top-1 font-bold ">BrenoBar51</h1>
-            <p class="absolute -bottom-0 left-9 opacity-60  text-sm">FullStack</p>
-          </div>
-          <div class="relative left-96 w-16 h-16 flex items-center justify-center ">
-            <i class='bx bx-user-circle text-5xl text-slate-400'></i>
-          </div>
-        </nav>
-        <div class="w-full h-40 flex">
-          <div class=" flex flex-col bg-white w-56 h-32 m-7 shadow-lg shadow-slate-400  "> 
-            <div class="bg-slate-200 w-8 h-8 rounded-full m-5 flex items-center justify-center">
-              <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(83, 57, 234, 1); font-size: small; "><path d="M12 9a3.02 3.02 0 0 0-3 3c0 1.642 1.358 3 3 3 1.641 0 3-1.358 3-3 0-1.641-1.359-3-3-3z"></path><path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.105-.316C21.927 11.617 19.633 5 12 5zm0 12c-5.351 0-7.424-3.846-7.926-5C4.578 10.842 6.652 7 12 7c5.351 0 7.424 3.846 7.926 5-.504 1.158-2.578 5-7.926 5z"></path></svg>
-            </div>
-            <div class="flex flex-col leading-4 w-32">
-              <span class="font-bold ml-5">$3.456K</span>
-              <p class="opacity-50 font-bold text-sm ml-5">Total Views</p>
-            </div>
-            <div class="flex relative  pb-4 items-end"> 
-              <span class="absolute right-2 pr-1 text-lime-400 font-bold text-sm">0.43%<i class='bx bxs-up-arrow-alt text-sm' style='color:#1dec67'></i></span>
-            </div>
-          </div>
-          <div class=" flex flex-col bg-white w-56 h-32 m-7 shadow-lg shadow-slate-400  "> 
-            <div class="bg-slate-200 w-8 h-8 rounded-full m-5 flex items-center justify-center">
-              <i class='bx bx-cart bx-flip-horizontal text-xl' style='color:#5339ea' ></i>
-            </div>
-            <div class="flex flex-col leading-4 w-32">
-              <span class="font-bold ml-5">$45,2K</span>
-              <p class="opacity-50 font-bold text-sm ml-5">Total Profit</p>
-            </div>
-            <div class="flex relative  pb-4 items-end"> 
-              <span class="absolute right-2 pr-1 text-lime-400 font-bold text-sm">4.35%<i class='bx bxs-up-arrow-alt text-sm' style='color:#1dec67'></i></span>
-            </div>
-          </div>
-          <div class=" flex flex-col bg-white w-56 h-32 m-7 shadow-lg shadow-slate-400  "> 
-            <div class="bg-slate-200 w-8 h-8 rounded-full m-5 flex items-center justify-center">
-              <i class='bx bxl-product-hunt text-xl' style='color:#5339ea'  ></i>
-            </div>
-            <div class="flex flex-col leading-4 w-32">
-              <span class="font-bold ml-5">$2.450</span>
-              <p class="opacity-50 font-bold text-sm ml-5">Total Product</p>
-            </div>
-            <div class="flex relative  pb-4 items-end"> 
-              <span class="absolute right-2 pr-1 text-lime-400 font-bold text-sm">2.59%<i class='bx bxs-up-arrow-alt text-sm' style='color:#1dec67'></i></span>
-            </div>
-          </div>
-          <div class=" flex flex-col bg-white w-56 h-32 m-7 shadow-lg shadow-slate-400  "> 
-            <div class="bg-slate-200 w-8 h-8 rounded-full m-5 flex items-center justify-center">
-              <i class='bx bxs-user-plus text-lg' style='color:#5339ea'></i>
-            </div>
-            <div class="flex flex-col leading-4 w-32">
-              <span class="font-bold ml-5">$3.456</span>
-              <p class="opacity-50 font-bold text-sm ml-5">Total Users</p>
-            </div>
-            <div class="flex relative  pb-4 items-end"> 
-              <span class="absolute right-2 pr-1 text-red-600 font-bold text-sm">0.95%<i class='bx bxs-down-arrow-alt text-sm' style='color:#ec1d20'></i></span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <section id="sidebar">
+    <a href="#" class="brand"><i class='bx bxs-smile icon'></i>AdminSite</a>
+    <ul class="side-menu">
+      <li><a href="#"><i class='bx bxs-dashboard icon'></i>Dashboard</a></li>
+      <li class="divider">Main</li>
+      <li>
+        <a href="#"><i class='bx bxs-inbox icon'></i> Elements <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Alert</a></li>
+          <li><a href="#">Badges</a></li>
+          <li><a href="#">Breadcrumbs</a></li>
+          <li><a href="#">Button</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class='bx bxs-chart icon'></i>Charts</a></li>
+      <li><a href="#"><i class='bx bxs-widget icon'></i>Widgets</a></li>
+      <li class="divider">Table and Forms</li>
+      <li><a href="#"><i class='bx bxs-notepad icon'></i>Tables</a></li>
+      <li>
+        <a href="#"><i class='bx bxs-inbox icon'></i> Forms <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Basic</a></li>
+          <li><a href="#">Select</a></li>
+          <li><a href="#">Checkbox</a></li>
+          <li><a href="#">Radio</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="ads">
+      <div class="wrapper">
+        <a href="#" class="btn-upgrade">Upgrade</a>
+        <p>Became a <span>PRO</span> member and enjoy <span>All Features</span></p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
