@@ -118,8 +118,8 @@ li{
     font-weight: 700;
 }
 #content{
-    position: relative;
-    width: calc(100% - 260px);
+    position: fixed;
+    width: calc(100%);
     left: 260px;
 }
 nav{
@@ -155,7 +155,6 @@ nav .form-group .icon{
     top: 50%;
     transform: translateY(-50%);
     right: 16px;
-
 }
 nav .nav-link{
     position: relative;
@@ -179,4 +178,46 @@ nav .nav-link .badge{
     color: white;
     font-size: 10px;
     font-weight: 700;
+}
+.graph-pizza1 {
+    margin-top: 400px;
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(pink 70deg, lightblue 0 235deg,orange 0);
+}
+body, .graph-pizza1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.graph-pizza2 {
+    margin-top: 400px;
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(pink 70deg, lightblue 0 235deg,orange 0);
+}
+body, .graph-pizza2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.graph-pizza3 {
+    margin-top: 400px;
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(pink 70deg, lightblue 0 235deg,orange 0);
+}
+body, .graph-pizza3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
